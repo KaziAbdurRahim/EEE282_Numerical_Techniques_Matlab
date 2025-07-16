@@ -1,5 +1,5 @@
 # Ignore MATLAB script and function files
-*.m
+#*.m
 
 # Ignore MATLAB figures and output files
 *.fig
