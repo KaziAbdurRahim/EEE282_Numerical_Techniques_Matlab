@@ -54,5 +54,3 @@ This folder contains MATLAB scripts and functions for implementing and visualizi
 - Engineering Applications of Regression
 
 ---
-
-Need help understanding the math behind these methods? Check out the [lab manual](../EEE_ECE_282_NumericalTechniquesLabManual.pdf) in the root directory.
