@@ -31,7 +31,7 @@ Each folder corresponds to a major topic or experiment:
 git clone https://github.com/KaziAbdurRahim/EEE282_Numerical_Techniques_Matlab.git
 ```
 
-````
+```
 
 1. Open MATLAB and navigate to the folder of interest.
 2. Run the scripts or call the functions with your own data.
@@ -87,8 +87,6 @@ Feel free to use, modify, and share with proper attribution.
 If you find this helpful or spot something to improve, feel free to fork the repo, open an issue, or reach out.
 Let’s make learning numerical techniques easier for everyone!
 
+---
+
 ```
-
-
-
-````
