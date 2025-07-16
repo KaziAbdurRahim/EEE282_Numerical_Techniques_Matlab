@@ -1,0 +1,23 @@
+# Ignore MATLAB script and function files
+*.m
+
+# Ignore MATLAB figures and output files
+*.fig
+*.mat
+
+# Ignore backup and autosave files
+*~
+*.asv
+
+# Ignore Simulink model and related files
+*.slx
+*.mdl
+*.mex*
+
+# Ignore hidden files and folders (sometimes MATLAB creates these)
+.DS_Store
+._*
+
+# Ignore any generated cache or metadata folders
+codegen/
+slprj/
