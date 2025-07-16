@@ -1,8 +1,8 @@
-%oil viscosity
+
 clc;
 close all;
 clear all;
-
+% Practice:01 oil viscosity  
 % x = [26.67 93.33 148.89 315.56];
 % y = [1.35 0.085 0.012 0.00075];
 % 
@@ -22,7 +22,7 @@ clear all;
 
 
 
-%Bacteria growth
+%Practice:02 Bacteria growth
 x = [0 4 8 12 16 20];
 y = [67 84 98 125 149 185];
 
