@@ -17,11 +17,12 @@ This repository is a personal collection of MATLAB scripts and functions that ex
 
 Each folder corresponds to a major topic or experiment:
 
-| Folder Name                                  | Description                                                   |
-| -------------------------------------------- | ------------------------------------------------------------- |
-| `CurveFitting_Linear_Polynomial_Regression/` | Linear, polynomial, and universal regression techniques       |
-| `AllAboutTable/`                             | Table creation and student data manipulation                  |
-| _(More folders coming soon)_                 | Differentiation, integration, ODEs, nonlinear equations, etc. |
+| Folder Name                                     | Description                                                                         |
+| ----------------------------------------------- | ----------------------------------------------------------------------------------- |
+| `CurveFitting_Linear_Polynomial_Regression/`    | Linear, polynomial, and universal regression techniques                             |
+| `CurveFitting_Linear_Polynomial_Interpolation/` | Linear, polynomial, and Interpolation techniques(with custom and in built function) |
+| `AllAboutTable/`                                | Table creation and student data manipulation                                        |
+| _(More folders coming soon)_                    | Differentiation, integration, ODEs, nonlinear equations, etc.                       |
 
 ---
 
@@ -46,6 +47,7 @@ Here’s the updated section with clickable links that take users directly to th
 ## 🧪 Topics Covered
 
 - [Curve fitting (linear, polynomial, universal)](https://github.com/KaziAbdurRahim/EEE282_Numerical_Techniques_Matlab/tree/main/CurveFitting_Linear_Polynomial_Regression)
+- [CurveFitting_Linear_Polynomial_Interpolation](https://github.com/KaziAbdurRahim/EEE282_Numerical_Techniques_Matlab/tree/main/CurveFitting_Linear_Polynomial_Interpolation)
 - [Numerical differentiation (forward, central, Richardson)](https://github.com/KaziAbdurRahim/EEE282_Numerical_Techniques_Matlab/tree/main/Experiment_03_Differentiation)
 - [Numerical integration (trapezoidal, Simpson’s rules)](https://github.com/KaziAbdurRahim/EEE282_Numerical_Techniques_Matlab/tree/main/Experiment_04_Integration)
 - [Solving linear and nonlinear equations](https://github.com/KaziAbdurRahim/EEE282_Numerical_Techniques_Matlab/tree/main/Experiment_07_Linear_Equations)
