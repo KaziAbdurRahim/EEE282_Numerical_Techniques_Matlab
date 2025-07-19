@@ -2,45 +2,59 @@ clc
 clear all 
 close all 
 
-x = [0, 2, 4, 6, 9, 11, 12, 15, 17, 19] ; 
-y = [5, 6, 7, 6, 9, 8, 7, 10, 12, 12]; 
+% ---------------------------------------------------
+% GIVEN DATA POINTS (x vs y)
+% ---------------------------------------------------
+x = [0, 2, 4, 6, 9, 11, 12, 15, 17, 19];
+y = [5, 6, 7, 6, 9, 8, 7, 10, 12, 12];
 
 
+% ---------------------------------------------------
+% METHOD 1: Linear Interpolation using Custom Function linear_interp()
+% ---------------------------------------------------
+xi = [2.5 10];                   % Point at which to interpolate
+yi = linear_interp(x, y, xi);   % Custom function that performs linear interpolation
 
-% ------------Custom function: linear_interp()------------
- 
-xi = 5;
-yi = linear_interp(x, y, xi); % used function: linear_interp
-plot(x, y, 'ro-', 'LineWidth', 2); 
+% Plot the result
+figure;
+plot(x, y, 'ro-', 'LineWidth', 2);   % Original data points with line
 hold on;
-plot(xi, yi, 'bs', 'MarkerSize', 10, 'MarkerFaceColor', 'b');
+plot(xi, yi, 'bs', 'MarkerSize', 10, 'MarkerFaceColor', 'b');  % Interpolated point
 legend('Original Data', 'Interpolated Point');
-title('Linear Interpolation with linear_interp');
-grid on; xlabel('x'); ylabel('y');
+title('Linear Interpolation using linear\_interp()');
+xlabel('x'); ylabel('y'); grid on;
 
+% ---------------------------------------------------
+% METHOD 2: Alternate Custom Function linear_interpol()
+% ---------------------------------------------------
+xp = 2.5 ;                  % Same interpolation point only one point
+yp = linear_interpol(x, y, xp);         % Another custom method
 
-% --------Alternate way function: linear_interpol()-------------------
-
-xp=5 ; 
-yp=linear_interpol(x, y, xp) ; % used function: linear_interpol
+% Plot the result
 figure;
-plot(x,y, '-*') 
+plot(x, y, '-*k', 'LineWidth', 1.5);     % Original data points
 hold on;
-plot(xp, yp, 'bs', 'MarkerSize', 10, 'MarkerFaceColor', 'b');
-axis([0 20 5 14])  % axis range x , y
-xlabel('x') 
-ylabel('y') 
-title('Plot of linear interpolayion with linear_interpol') 
-legend('actual dada-points' ) 
+plot(xp, yp, 'bs', 'MarkerSize', 10, 'MarkerFaceColor', 'b');  % Interpolated point
+axis([0 20 5 14]);                      % Set axis range
+xlabel('x'); ylabel('y');
+title('Linear Interpolation using linear\_interpol()');
+legend('Data Points', 'Interpolated Point');
+grid on;
 
-% ------------inbuilt function: interp1 ------------------
+
+% ---------------------------------------------------
+% METHOD 3: Using MATLAB Built-in interp1() Function
+% ---------------------------------------------------
+% Interpolate at the same xi using MATLAB's built-in 'linear' method
 yp = interp1(x, y, xi, 'linear');
+
+% Plot the result
 figure;
-plot(x,y, 'g-*') 
+plot(x, y, 'g-*', 'LineWidth', 1.5);     % Original data
 hold on;
-plot(xp, yp, 'bs', 'MarkerSize', 10, 'MarkerFaceColor', 'b');
-axis([0 20 5 14])  % axis range x , y
-xlabel('x') 
-ylabel('y') 
-title('Plot of linear interpolayion using Built in fuction') 
-legend('actual dada-points' ) 
+plot(xi, yp, 'bs', 'MarkerSize', 10, 'MarkerFaceColor', 'b');  % Interpolated point
+axis([0 20 5 14]);
+xlabel('x'); ylabel('y');
+title('Linear Interpolation using Built-in interp1()');
+legend('Data Points', 'Interpolated Point');
+grid on;
