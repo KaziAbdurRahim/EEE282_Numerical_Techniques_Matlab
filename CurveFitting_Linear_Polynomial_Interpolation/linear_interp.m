@@ -1,5 +1,5 @@
 function yi = linear_interp(x, y, xi)
-% LINEAR_INTERP - Performs linear interpolation
+
 % x, y : known data points
 % xi   : input query point(s)
 % yi   : interpolated value(s)
